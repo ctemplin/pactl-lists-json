@@ -1,0 +1,17 @@
+{
+  "name": "pactl-lists-json",
+  "version": "1.0.0",
+  "description": "Wrapper to return JSON object from pactl list commands.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "pactl",
+    "json"
+  ],
+  "author": "Chris Templin",
+  "license": "ISC"
+}
