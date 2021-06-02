@@ -44,9 +44,11 @@ async function getInputs(){
                 if (stderr) {
                     reject(stderr)
                 }
-                var inputBlocks = stdout.split('\n\n')
                 inputArr = []
-                inputBlocks.map(function(block){inputArr.push(tokenize(block))})
+                if (stdout.length) {
+                    var inputBlocks = stdout.split('\n\n')
+                    inputBlocks.map(function(block){inputArr.push(tokenize(block))})
+                }
                 resolve(inputArr)
             })
         } catch(error) {
